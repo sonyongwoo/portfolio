@@ -129,7 +129,7 @@ em { font-style: italic; }
 
 .hero__role { color: #8fe9cd; font-weight: 700; font-size: .82rem; letter-spacing: .18em; text-transform: uppercase; margin-bottom: var(--s2); }
 .hero__name { font-family: var(--font-display); font-weight: 800; font-size: clamp(3rem, 10vw, 5.6rem); line-height: 1; letter-spacing: -0.01em; margin-bottom: var(--s3); text-shadow: 0 2px 30px rgba(0,0,0,.35); }
-.hero__tagline { font-family: var(--font-sans); font-size: clamp(1.1rem, 2.6vw, 1.4rem); font-weight: 400; line-height: 1.55; color: rgba(255,255,255,.92); max-width: 34ch; }
+.hero__tagline { font-family: var(--font-sans); font-size: clamp(1.1rem, 2.6vw, 1.4rem); font-weight: 400; line-height: 1.55; color: rgba(255,255,255,.92); max-width: 52ch; }
 .hero__tagline em { color: #8fe9cd; font-style: normal; font-weight: 600; }
 
 /* ---------- Socials ---------- */

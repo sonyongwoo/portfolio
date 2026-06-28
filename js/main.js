@@ -16,48 +16,56 @@
       title: 'Isolation and whole genome sequencing of an Avian orthoavulavirus 16 from cinereous vulture (Aegypius monachus) in South Korea, 2023',
       authors: 'Son Y, Lee SH, Lee DY, Cho H, Son Y, Kim D, Song CS, Lee DH',
       venue: '<em>Frontiers in Veterinary Science</em>, 13',
+      doi: 'https://doi.org/10.3389/fvets.2026.1739779',
     },
     {
       year: 2026, cofirst: true,
       title: 'Black-tailed Gull (Larus crassirostris): A Novel Host for Trichomonas gypaetinii with High Prevalence of Avian Trichomonads in South Korea',
       authors: 'Kim J, Son Y, Hwang B, Kim Y, Kim J, Min W, Kim WH',
       venue: '<em>Journal of Wildlife Diseases</em>, 62(1), 192–197',
+      doi: 'https://doi.org/10.7589/JWD-D-25-00039',
     },
     {
       year: 2025, cofirst: false,
       title: 'An rpoB Sequence Type Network as a Framework for the Evolutionary Investigation of Clostridium perfringens',
       authors: 'Ahn SM, Son S, Son Y, Lim SJ, Kim D, Choi KS, Kwon HJ',
       venue: '<em>Microorganisms</em>, 13(12), 2768',
+      doi: 'https://doi.org/10.3390/microorganisms13122768',
     },
     {
       year: 2025, cofirst: false,
       title: 'Discovery, phylogenetic, and comparative genomic analysis of novel avian gammacoronaviruses identified in feral pigeons (Columba livia domestica)',
       authors: 'El Zowalaty ME, Taylor LJ, Son Y, Lee H, Rubrum AM, Webby RJ, Bustin SA, Young SG, Lee S-H, Lee D-H, Frieman MB',
       venue: '<em>Journal of Virology</em>, 99(9), e01112-25',
+      doi: 'https://doi.org/10.1128/jvi.01112-25',
     },
     {
       year: 2024, cofirst: true,
       title: 'Comparative Analysis of Antibiotic Resistance and Biofilm Characteristics of Two Major Enterococcus Species from Poultry Slaughterhouses in South Korea',
       authors: 'Son Y, Jin YB, Cho EJ, Park AR, Flores RA, Nguyen TB, Lee SY, Altanzul B, Park KI, Min W, Kim WH',
       venue: '<em>Veterinary Sciences</em>, 11(4), 180',
+      doi: 'https://doi.org/10.3390/vetsci11040180',
     },
     {
       year: 2024, cofirst: false,
       title: 'Genetic Characterization and Phylogeographic Analysis of the First H13N6 Avian Influenza Virus Isolated from Vega Gull in South Korea',
       authors: 'Flores RA, Cammayo-Fletcher PLT, Nguyen BT, Villavicencio AGM, Lee SY, Son Y, Kim JH, Park KI, Yoo WG, Jin YB, Min W, Kim WH',
       venue: '<em>Viruses</em>, 16(2), 285',
+      doi: 'https://doi.org/10.3390/v16020285',
     },
     {
       year: 2023, cofirst: true,
       title: 'The prevalence of viral diseases in wild boars (Sus scrofa) in Gyeongsangnam-do, South Korea',
       authors: 'Kim CH, Son Y, Choi YJ, Ko BH, Kang WH, Kim GA, Lee S, Kim WH',
       venue: '<em>Korean Journal of Veterinary Service</em>, 46(1), 59–66',
+      doi: 'https://doi.org/10.7853/kjvs.2023.46.1.59',
     },
     {
       year: 2022, cofirst: true,
       title: 'Prevalence study of bovine viral diarrhea virus (BVDV) from cattle farms in Gyeongsangnam-do, South Korea in 2021',
       authors: 'Son Y, Cho S, Ji JM, Cho JK, Bang SY, Choi YJ, Kim CH, Kim WH',
       venue: '<em>Korean Journal of Veterinary Service</em>, 45(3), 211–219',
+      doi: 'https://doi.org/10.7853/kjvs.2022.45.3.211',
     },
   ];
 
@@ -138,7 +146,7 @@
       '<h3>' + p.title + '</h3>' +
       '<p class="m-authors">' + boldMe(p.authors) + '</p>' +
       '<p class="m-venue">' + p.venue + '</p>' +
-      '<a class="m-link" href="' + SCHOLAR + '" target="_blank" rel="noopener">Find on Google Scholar →</a>'
+      '<a class="m-link" href="' + p.doi + '" target="_blank" rel="noopener">View article (DOI) →</a>'
     );
   }
   function openTalkModal(t) {

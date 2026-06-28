@@ -16,7 +16,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Raleway:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
 
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/style.css?v=2" />
 
   <script>
     (function () {
@@ -57,7 +57,7 @@
         <p class="hero__role reveal">Veterinarian, MSc Student, Wildlife Health Laboratory</p>
         <h1 class="hero__name reveal">Yongwoo Son</h1>
         <p class="hero__tagline reveal">
-          Studying how viruses <em>emerge</em>, <em>evolve</em>, and <em>spread</em>
+          Studying how viruses <em>emerge</em>, <em>evolve</em>, and <em>spread</em><br>
           through wildlife under a <em>One Health</em> lens.
         </p>
         <div class="socials reveal" aria-label="Links">
@@ -79,24 +79,22 @@
     <section id="about" class="section container">
       <div class="section__head reveal">
         <h2>About</h2>
-        <p class="section__sub">One Health at the wildlife–livestock–human interface</p>
       </div>
       <div class="about">
         <div class="prose reveal">
           <p>
             I'm a veterinarian (DVM) and Master's student in the Wildlife Health Laboratory at the
             College of Veterinary Medicine, Konkuk University, Seoul, under the supervision of
-            <strong>Prof. Dong-hun Lee</strong>. My research investigates how viruses
-            <strong>emerge, circulate, and evolve</strong> across wildlife, livestock, and human
-            populations.
+            Prof. Dong-hun Lee. My research investigates how viruses emerge, circulate, and evolve
+            across wildlife, livestock, and human populations.
           </p>
           <p>
             Combining field surveillance, whole-genome sequencing, and phylodynamic analysis, I study
             viruses circulating in wild animals, interpreting the findings that emerge from
             surveillance to better understand how they spread and evolve. Most recently, through
-            capacity-building programs in <strong>Laos and Tanzania</strong>, I have designed
-            country-specific arbovirus sequencing primers, trained local teams in NGS, and worked
-            with them to analyze the results.
+            capacity-building programs in Laos and Tanzania, I have designed country-specific
+            arbovirus sequencing primers, trained local teams in NGS, and worked with them to
+            investigate the transmission dynamics of these arboviruses.
           </p>
         </div>
         <ul class="facts reveal" aria-label="Quick facts">
@@ -112,7 +110,6 @@
     <section id="current" class="section container">
       <div class="section__head reveal">
         <h2>Current research</h2>
-        <p class="section__sub">What I'm working on right now</p>
       </div>
       <div class="grid grid--2">
         <article class="tile tile--accent reveal">
@@ -140,7 +137,6 @@
     <section id="publications" class="section container">
       <div class="section__head reveal">
         <h2>Publications</h2>
-        <p class="section__sub">8 peer-reviewed articles · click any to expand</p>
       </div>
       <ul class="pubs" id="pubs-list"><!-- populated by JS from data --></ul>
       <p class="section__foot reveal">
@@ -152,7 +148,6 @@
     <section id="cv" class="section container">
       <div class="section__head reveal">
         <h2>Background</h2>
-        <p class="section__sub">Education, funding &amp; honors</p>
       </div>
 
       <h3 class="subhead reveal">Education</h3>
@@ -174,18 +169,15 @@
       </ol>
 
       <h3 class="subhead reveal">Funding</h3>
-      <article class="grant reveal">
-        <div class="grant__top">
-          <span class="status status--solid">Principal Investigator</span>
-        </div>
-        <h4 class="grant__title">Disease Ecological Analysis of the Evolution and Transmission Dynamics of Avian Paramyxoviruses in Wild Birds</h4>
-        <dl class="grant__meta">
-          <div><dt>Funder</dt><dd>National Research Foundation of Korea</dd></div>
-          <div><dt>Program</dt><dd>Master's Student Research Grant</dd></div>
-          <div><dt>Period</dt><dd>Sep 2025 — Aug 2026</dd></div>
-          <div><dt>Award no.</dt><dd>RS-2025-25421559</dd></div>
-        </dl>
-      </article>
+      <ol class="timeline">
+        <li class="tl reveal">
+          <span class="tl__date">2025 — 2026</span>
+          <div class="tl__body">
+            <h4>Disease Ecological Analysis of the Evolution and Transmission Dynamics of Avian Paramyxoviruses in Wild Birds</h4>
+            <p>Principal Investigator · National Research Foundation of Korea — Master's Student Research Grant (RS-2025-25421559)</p>
+          </div>
+        </li>
+      </ol>
 
       <h3 class="subhead reveal">Honors &amp; awards</h3>
       <ol class="timeline">
@@ -203,9 +195,15 @@
     <section id="experience" class="section container">
       <div class="section__head reveal">
         <h2>Experience</h2>
-        <p class="section__sub">Field &amp; laboratory research training</p>
       </div>
       <ol class="timeline">
+        <li class="tl reveal">
+          <span class="tl__date">2025</span>
+          <div class="tl__body">
+            <h4>Croucher Summer Course: Emerging Viral Infections</h4>
+            <p>Croucher Foundation, Hong Kong</p>
+          </div>
+        </li>
         <li class="tl reveal">
           <span class="tl__date">2024</span>
           <div class="tl__body">
@@ -255,7 +253,6 @@
     <section id="contact" class="section container">
       <div class="section__head reveal">
         <h2>Get in touch</h2>
-        <p class="section__sub">Open to collaborations in wildlife genomics &amp; One Health</p>
       </div>
       <div class="contact reveal">
         <a class="contact__cta" href="mailto:yongwooson1@gmail.com">yongwooson1@gmail.com</a>
@@ -285,6 +282,6 @@
     <div class="modal__body" id="modal-body"></div>
   </dialog>
 
-  <script src="js/main.js"></script>
+  <script src="js/main.js?v=2"></script>
 </body>
 </html>
