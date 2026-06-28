@@ -302,10 +302,13 @@ em { font-style: italic; }
   .about { grid-template-columns: 1fr; }
   .pub { grid-template-columns: auto 1fr; }
   .pub__arrow { display: none; }
-  .tl { grid-template-columns: 1fr; gap: .2rem; }
+  .tl { grid-template-columns: 1fr; gap: .1rem; position: relative; padding-left: 1.6rem; }
   .tl__date { text-align: left; order: -1; }
   .tl__body { border-left: none; padding-left: 0; }
   .tl__body::before { display: none; }
+  .tl::before { content: ''; position: absolute; left: 4px; top: .55rem; bottom: 0; width: 2px; background: var(--border); }
+  .tl::after { content: ''; position: absolute; left: 0; top: .5rem; width: 11px; height: 11px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 4px var(--accent-soft); }
+  .tl:last-child::before { display: none; }
   .grant__top { flex-direction: column; align-items: flex-start; gap: .5rem; }
   .footer { flex-direction: column; gap: var(--s1); text-align: center; }
 }
