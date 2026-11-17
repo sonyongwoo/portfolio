@@ -115,6 +115,38 @@
     });
   }
 
+  /* ---------------- Photo strip ---------------- */
+  // Trackpads swipe sideways and touchscreens drag, but a mouse has neither,
+  // so the strip follows the pointer when it is held down.
+  const strip = $('.strip');
+  if (strip) {
+    let held = false, fromX = 0, fromLeft = 0;
+
+    strip.addEventListener('pointerdown', (e) => {
+      if (e.pointerType !== 'mouse' || e.button !== 0) return;
+      held = true;
+      fromX = e.clientX;
+      fromLeft = strip.scrollLeft;
+      strip.setPointerCapture(e.pointerId);
+      strip.classList.add('strip--dragging');
+    });
+
+    strip.addEventListener('pointermove', (e) => {
+      if (!held) return;
+      e.preventDefault();
+      strip.scrollLeft = fromLeft - (e.clientX - fromX);
+    });
+
+    const release = (e) => {
+      if (!held) return;
+      held = false;
+      strip.classList.remove('strip--dragging');
+      if (strip.hasPointerCapture(e.pointerId)) strip.releasePointerCapture(e.pointerId);
+    };
+    strip.addEventListener('pointerup', release);
+    strip.addEventListener('pointercancel', release);
+  }
+
   /* ---------------- Footer year ---------------- */
   const yearEl = $('#year');
   if (yearEl) yearEl.textContent = String(new Date().getFullYear());

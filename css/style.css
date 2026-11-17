@@ -110,7 +110,17 @@ em, i { font-style: italic; }
   overflow-x: auto; scroll-snap-type: x proximity; overscroll-behavior-x: contain;
   scrollbar-width: thin; scrollbar-color: var(--rule) transparent;
   padding-bottom: .4rem;
+  cursor: grab;
 }
+/* macOS hides its overlay scrollbar, so the strip looks like it cannot move;
+   -webkit-appearance keeps this one on screen. */
+.strip::-webkit-scrollbar { height: 6px; -webkit-appearance: none; }
+.strip::-webkit-scrollbar-thumb { background: var(--rule); border-radius: 3px; }
+.strip::-webkit-scrollbar-track { background: transparent; }
+/* a mouse has no sideways wheel, so the strip can also be pulled */
+.strip { user-select: none; }   /* so a drag moves the strip instead of selecting the panel letters */
+.strip--dragging { cursor: grabbing; scroll-snap-type: none; }
+.strip img { -webkit-user-drag: none; }
 .plate { --ar: 1; position: relative; flex: none; height: 14rem; aspect-ratio: var(--ar); scroll-snap-align: start; }
 .plate--wide { --ar: 4 / 3; }
 .plate--tall { --ar: 3 / 4; }
